@@ -199,6 +199,7 @@ GameObject:
   - component: {fileID: 294909120}
   - component: {fileID: 294909119}
   - component: {fileID: 294909118}
+  - component: {fileID: 294909121}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -268,7 +269,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 294909119}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 294909121}
+        m_MethodName: RestartClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &294909119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,6 +318,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294909116}
   m_CullTransparentMesh: 0
+--- !u!114 &294909121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294909116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed0956281ea78834891995262b5d5863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &567266982
 GameObject:
   m_ObjectHideFlags: 0

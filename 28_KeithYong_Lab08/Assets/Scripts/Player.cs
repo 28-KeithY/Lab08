@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
 
         float verticalInput = Input.GetAxis("Vertical");
 
-        transform.position = transform.position + new Vector3(0 , verticalInput * speed * Time.deltaTime, 0);
+        transform.position = transform.position + new Vector3(0, verticalInput * speed * Time.deltaTime, 0);
     }
 
     public void OnCollisionEnter(Collision collision)
