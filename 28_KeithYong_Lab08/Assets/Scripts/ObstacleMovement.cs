@@ -19,5 +19,11 @@ public class ObstacleMovement : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        if(transform.position.x < -9.26f)
+        {
+            Player.instance.Scorecount += 1;
+            Destroy(this.gameObject);
+        }
     }
 }
